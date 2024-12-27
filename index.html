@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+  integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+  integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-black">
+    <header >
+        <div id="toggleDiv" class="flex justify-between md:px-[40px] px-[25px] py-[5px] items-center latest">
+          <div><h1 class="text-white font-extrabold text-70px cabin">Loyal Streamers</h1></div>
+          <div>
+             <ul class="lg:flex hidden cabin gap-[40px] items-center"> 
+                <li><a class="text-[18px] font-normal text-white foot underline" href="">Home</a></li>
+     <li class=" dropdown "> 
+        <a class="text-[18px] font-normal text-white foot" href=""> About <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span> </a>
+         <ul class="dropdown-content absolute left-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg hidden"> <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Company Overview</a></li>
+             <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Our Team</a></li> 
+             <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Our Values</a></li> 
+             <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Location</a></li> 
+            </ul>
+         </li>
+      <li class=" dropdown ">
+         <a class="text-[18px] font-normal text-white foot" href="./services.html"> Services <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span> </a>
+         <ul class="dropdown-content absolute left-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg hidden"> <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">TV Channels</a></li>
+     <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Get Pro</a></li>
+         <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">VPNs</a> </li> 
+         <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Music Streaming</a> </li>
+         <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Creative Tools</a> </li>
+
+    </ul>
+     </li>
+      
+       <li class="dropdown">
+        <a class="text-[18px] font-normal text-white foot" href="">Prices <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span></a>
+        <ul class="dropdown-content absolute left-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg hidden"> <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Subscription Plans</a></li>
+            <li><a class="block px-4 py-2 hover:bg-gray-200" href="#netflix">Service Pricing</a></li>
+                <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Promotional Offers</a> </li> 
+                <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Annual vs. Monthly</a> </li>
+                <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Bundle Deals</a> </li>
+       
+           </ul>
+    </li>
+        <li>
+            <a class="text-[18px] font-normal text-white foot" href="">Contacts <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span></a>
+        </li>
+         <a href=""><button class="text-nowrap text-white l-one px-[25px] py-[5px] border-2 rounded-lg border-white hover:border-transparent hover:bg-sky-300 hover:text-white" style="transition:all 0.2s ease-in;">Subscribe</button></a> 
+        </ul>
+     </div>
+          <div  class="lg:hidden flex gap-[20px] l-one1 items-center ">
+            <a href="./services.html"><button class="sm:px-[18px] py-[4px] px-[18px] text-[14px] border-[2px] rounded-lg hover:border-transparent text-white  hover:bg-sky-300 hover:text-white" style="transition:all 0.2s ease-in;">Subscribe</button></a>
+            <div class="nav text-white" id="menuToggle" onclick="handleMenu()"><i class="fa-solid fa-bars" id="barsIcon"></i></div>
+          </div>
+        </div>
+        <div id="nav-dialogue" class="hidden fixed1 lg:hidden mb-5">
+          <div class="flex justify-between mx-[15px] my-[20px]">
+            <div><h1 class="text-sky-400 font-extrabold text-70px cabin">Loyal Streamers</h1></div>
+            <div class="flex gap-[20px] l-one1 items-center">
+              <a href="./services.html"><button class="sm:px-[18px] py-[4px] px-[18px] text-[14px] border-[2px] rounded-lg hover:border-transparent bg-black text-white hover:bg-sky-300 hover:text-white" style="transition:all 0.2s ease-in;">Subscribe</button></a>
+              <div class="nav" id="menuToggle" onclick="handleMenu()"><i class="fa-solid fa-xmark hidden" id="xmarkIcon"></i></div>
+            </div>
+          </div>
+          <div class="block mx-[25px] my-[20px]">
+            <ul class="cabin">
+                <li><a class="text-[14px] font-normal text-black pb-[10px] underline transition-transform transform hover:scale-110 hover:text-sky-300 hover:font-bold" href="#">Home</a></li>
+                <li><a class="text-[14px] font-normal text-black pb-[10px] transition-transform transform hover:scale-110 hover:text-sky-300 hover:font-bold" href="#section4">About</a></li>
+                <li><a class="text-[14px] font-normal text-black pb-[10px] transition-transform transform hover:scale-110 hover:text-sky-300 hover:font-bold" href="#section1">Services</a></li>
+                <li><a class="text-[14px] font-normal text-black pb-[10px] transition-transform transform hover:scale-110 hover:text-sky-300 hover:font-bold" href="#section3">Prices</a></li>
+                <li><a class="text-[14px] font-normal text-black mb-[15px] transition-transform transform hover:scale-110 hover:text-sky-300 hover:font-bold" href="#">Contacts</a></li>
+              </ul>
+              
+          </div>
+        </div>
+      </header>
+      
+      
+      
+<section class="first relative " style=" background-image: url('netflix.jpg') ; height : auto;;
+   background-size: cover; ">    
+    <div class="screen mx-auto  md:pt-[250px] md:pb-[90px] pt-[160px] mb-[0] ">
+    <div class=" block h-[393px] lg:w-[508px] md:w-[710px] w-auto z-10 relative  animate-me hidden1">
+<h1 class="lg:text-[65px] sm:text-[70px]  text-[35px] text-white leading-[1] cabin ">Unlock Unlimited Entertainment with Our  Services</h1>
+<p class="xl:text-[18px] text-[16px] mt-[24px] cabin md:font-light xl:font-medium text-white md:pe-[100px] leading-[1.75] xl:pe-[0]">Elevate your entertainment with our all-inclusive streaming services, offering the best in movies, TV shows, music, creative tools, and more!</p>
+<a  href="./services.html" class=""> <button class="xl:px-[42px] xl:py-[11px] px-[28px] py-[9px] border-2  rounded-lg mt-[44px] cabin font-semibold text-[16px] text-white hover:border-transparent hover:bg-sky-300 hover:text-black " style="transition:all  0.2s  ease-in ">Purchase</button></a>
+</div>
+ 
+    </div>
+   
+</section>
+<section class=" mt-[142px] screen mx-auto ">
+    <div class="block justify-center ">
+        <div class="animate-me hidden1">
+    <div class=" text-center ">
+        <h6 class="md:text-[16px] text-[12px] cabin  text-sky-200 font-normal pb-[16px]">What We Do</h6>
+    </div>
+    <div class="text-center xl:px-[240px] md:px-[120px] lg:px-[180px] pb-[20px]">
+  <h1 class=" text-[#22220] xl:text-[40px] md:text-[35px] text-[26px] cabin font-medium  leading-[1.15]  text-sky-200 lg:leading-[1.25] ">Unlock Premium Digital Services: VPN, Canva Pro, TV Channels & Spotify</h1>
+      </div>
+    </div>
+
+      <div class="gap-[30px] sm:flex block items-center justify-center mt-[50px]  ">
+        <div class="build-section animate-me hidden1 bg-white cabin w-auto h-auto border-[1px] rounded-lg hover-effect border-[#CDCDCD] sm:p-[30px] p-[18px]  mb-[40px] ">
+            <div class="information"><span><i class="fa-solid fa-tv"></i></span></div>
+            <div class="sm:pt-[24px] pt-[15px]">
+         <h3 class=" sm:text-[18px] text-[15px] font-semibold cabin  text-black opacity-75">TV Channels</h3>
+         <p class="sm:text-[16px] text-[13px] font-normal   text-black cabin py-[8px] opacity-65" >Stream live sports, news, movies, and entertainment across all TV channels, enjoying effortless access to top content.</p>
+         <a href=""><h5 class="sm:text-[16px] text-[12px]    text-black font-normal cabin opacity-65">learn more <i class="fa-solid fa-arrow-right "></i></h5></a>
+          </div>
+        </div>
+        <div class="build-section animate-me hidden1 cabin  bg-white w-auto h-auto border-[1px] rounded-lg hover-effect border-[#CDCDCD] sm:p-[30px] p-[18px]  mb-[40px] ">
+            <div class="information"><span class="  text-white"><i class="fa-brands fa-web-awesome"></i></span></div>
+            <div class="sm:pt-[24px] pt-[15px]">
+         <h3 class=" sm:text-[18px] text-[15px]    text-black font-semibold cabin opacity-75">Get Pro</h3>
+         <p class="sm:text-[16px] text-[13px]   text-black font-normal cabin py-[8px] opacity-65" >Unlock creativity with Canva Pro, enjoy Spotify Pro's premium music, and leverage GPT-4 AI – all at unbeatable prices</p>
+         <a href=""><h5 class="sm:text-[16px]   text-black text-[12px] font-normal cabin opacity-65">learn more <i class="fa-solid fa-arrow-right "></i></h5></a>
+        </div>
+        </div>
+        <div class="build-section animate-me hidden1  bg-white cabin w-auto h-auto border-[1px] rounded-lg hover-effect border-[#CDCDCD] sm:p-[30px] p-[18px]  mb-[40px] ">
+            <div class="information"><span class="  text-white"><i class="fa-brands fa-creative-commons-sampling-plus"></i></span></div>
+            <div class="sm:pt-[24px] pt-[15px]">
+         <h3 class=" sm:text-[18px] text-[15px] font-semibold   text-black cabin opacity-75">Premium Vpn's</h3>
+         <p class="sm:text-[16px] text-[13px] font-normal   text-black cabin py-[8px] opacity-65" >Protect your online activities with Pro VPNs, offering superior privacy and fast connections, all at unbeatable prices.</p>
+         <a href=""><h5 class="sm:text-[16px] text-[12px]   text-black font-normal cabin opacity-65">learn more <i class="fa-solid fa-arrow-right "></i></h5></a>
+        </div>
+        </div>
+           
+      </div>
+</div>
+
+</section>
+<div class="border-b-[1px] text-sky-600 xl:max-w-[740px] lg:w-[560px] md:w-[460px] w-[250px] mx-auto sm:my-[100px] first-b my-[80px]"></div>
+<section id="section2" class="screen mx-auto lg:flex  third lg:items-center ">
+    <div >
+        <img src="homeagency-section-1.png" alt="" class=" md:h-[680px] lg:h-[340px] xl:h-[100%]  escape">
+    </div>
+    <div  class=" xl:w-[546px] lg:w-[400px] w-auto third-text  mt-[16px] animate-me hidden1">
+        <h8 class=" text-[12px] text-sky-300 sm:text-[16px]   lg:font-medium md:font-light cabin ">About Us</h8>
+        <h1 class=" text-[26px] xl:text-[40px] md:text-[35px] text-sky-300  pb-[20px] font-medium   cabin mt-[24px] leading-[1.15] sm:leading-[1.25]">Welcome to "Loyal Streamers"<br>  Elevate Your Digital Experience!</h1>
+        <p class="xl:text-[18px] md:text-[16px] text-[15px] sm:font-normal font-light  text-white cabin leading-[1.6]">Welcome to Loyal Streamers, your go-to destination for premium digital services. We offer a wide range of subscriptions including Netflix, Prime Video, HBO Max, Spotify Pro, Canva Pro, GPT-4, and Pro VPNs. Our mission is to enhance your entertainment, creativity, and online security, all at unbeatable prices. Join us today and elevate your digital experience to new heights!</p>
+        <a href="">
+            <button class="xl:font-semibold font-medium xl:text-[16px] text-[14px]  btn bg-white text-black border-transparent rounded-[10px] border-black sm:px-[42px] px-[25px] sm:py-[12px] py-[10px]  mt-[48px]  hover:bg-sky-300 hover:text-white  ">learn more <i class="fa-solid fa-arrow-right "></i></button>
+        </a>
+    </div>
+
+</section>
+<div class="border-b-[1px] text-sky-600 xl:max-w-[740px] lg:w-[560px] md:w-[460px] w-[250px] mx-auto sm:my-[100px] first-b my-[80px]"></div>
+<section class=" sm:mt-[95px] mt-[70px]">
+    <div class="screen mx-auto animate-me hidden1">
+    <div class="text-center sm:py-[95px] pb-[10px] pt-[60px]">
+        <h8 class="sm:text-[16px] text-[12px] font-medium  text-white cabin mb-[5px] sm:mb-[12px]">Our Services</h8>
+        <h1 class="xl:text-[40px] md:text-[35px] text-[28px] pb-[20px]  text-sky-300 font-medium  cabin mt-[14px] leading-[1.25] xl:px-[200px] lg:px-[180px]  md:px-[90px]">Unleash the Power of Digital Innovation</h1>
+       
+        <a href="">
+            <button class="font-semibold sm:text-[16px] text-[14px] btn bg-white border-transparent rounded-[10px] border-black sm:px-[40px] px-[25px] sm:py-[12px]  text-black hover:text-white py-[10px] mt-[25px] hover:bg-sky-300  ">See more <i class="fa-solid fa-arrow-right "></i></button>
+        </a>
+    </div>
+   </div>
+
+     <section id="section4" class="screen mx-auto cabin sm:flex block justify-center items-center xl:gap-[220px] lg:gap-[100px] md:gap-[40px]  sm:pb-[100px] pb-[60px] "> 
+    <div class="mt-[50px] animate-me hidden1" >
+        <h1 class="xl:text-[18px] md:text-[17px] xl:font-medium md:font-normal   text-sky-300 leading-[1.6] cabin mb-[16px]">Tv Channels</h1>
+        <div>
+        <a href="services.html#netflix"><h3  class="pt-[8px] xl:text-[16px] md:text-[15px]  text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span> NETFLIX</h3></a>
+       <a href="services.html#primevideo"> <h3  class="pt-[8px] xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span> PRIME VIDEO</h3></a>
+       <a href="services.html#IPTV"> <h3  class="pt-[8px] xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span> IPTV</h3></a>
+       <a href="services.html#Chaupal"> <h3  class="pt-[8px] xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span>CHAUPAL</h3></a>
+       <a href="services.html#HULLU"> <h3  class="pt-[8px] xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span>HULLU</h3></a>
+       <a href="services.html#Hbo"> <h3  class="pt-[8px] xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span>HBOMAX+</h3></a>
+    </div>
+        
+    </div>
+    <div class="mt-[50px] animate-me hidden1">
+        <h1 class="xl:text-[18px] md:text-[17px] xl:font-medium md:font-normal  text-sky-300 leading-[1.6] cabin mb-[16px]">Get Pro</h1>
+        <div>
+        <a href=""><h3  class="pt-[8px]  xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span> Canva Pro</h3></a> 
+        <a href=""><h3  class="pt-[8px]  xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span>Capcut Pro</h3></a>
+        <a href=""><h3  class="pt-[8px]  xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"> <span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span>Spotify</h3></a>
+        <a href=""><h3  class="pt-[8px]  xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span>Chat Gpt-4</h3></a>
+        <a href=""><h3  class="pt-[8px]  xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span>Youtube Premium</h3></a>
+        <a href=""><h3  class="pt-[8px]  xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span>Linkedin Premium</h3></a>
+        
+    </div>
+    </div>
+    <div class="mt-[50px] animate-me hidden1">
+        <h1 class="xl:text-[18px] md:text-[17px] xl:font-medium md:font-normal  text-sky-300 leading-[1.6] cabin mb-[16px]" >Premium Vpn's</h1>
+        <div>
+       <a href=""> <h3 class="pt-[8px]  xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span>Hotspot shield Vpn</h3></a>
+       <a href=""> <h3 class="pt-[8px]  xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin" ><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span>Nord Vpn</h3></a>
+        <a href=""><h3  class="pt-[8px]  xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span>Surfshark Vpn </h3></a>
+        <a href=""><h3  class="pt-[8px]  xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span>Express Vpn </h3></a>
+        <a href=""><h3  class="pt-[8px]  xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span>ZenMate</h3></a>
+        <a href=""><h3  class="pt-[8px]  xl:text-[16px] md:text-[15px] text-[12px] hover:text-sky-300  text-white font-normal cabin"><span class="pe-[20px]"><i class="fa-solid fa-plus"></i></span>Proton vpn </h3></a>
+    </div>
+    </div>
+</section>
+<div class="border-b-[1px] text-sky-600 xl:max-w-[740px] lg:w-[560px] md:w-[460px] w-[250px] mx-auto sm:my-[100px] first-b my-[80px]"></div>
+
+</section>
+<section id="section3" class="sm:mt-[100px] mt-[60px] screen mx-auto">
+<h6 class="sm:text-[16px] text-[14px]  text-white font-medium cabin">We Offers</h6>
+<div class=" block sm:flex items-center justify-between  arrow mb-[70px]">
+    <div >
+        <h1 class="xl-text-[40px] md:text-[35px] text-[25px] text-sky-300 leading-[1.25] font-medium cabin lg:pe-[200px] xl:pe-[0] mb-[40px] mt-[8px] sm:mt-[14px] ">Comprehensive Digital Solutions for Every Need</h1>
+    </div>
+    <div class="flex items-center gap-[15px]">
+        <div class="custom-prev text-white hover:text-sky-300"><i class="fa-solid fa-left-long border-[1px] border-[rgba(34, 34, 34, 0.3)] p-[10px] text-[24px] rounded-md hover:border-sky-300 "></i></div>
+        <div class="custom-next text-white hover:text-sky-300"><i class="fa-solid fa-right-long border-[1px] border-[rgba(34, 34, 34, 0.3)] p-[10px] text-[24px] rounded-md hover:border-sky-300 "></i></div>
+        <div class="lg:text-nowrap"> <a href="">
+            <button class="text-nowrap  font-semibold lg:text-[16px] md:text-[14px] text-[13px] btn   border-transparent rounded-[10px] border-black lg:px-[30px]  lg:py-[12px] px-[25px] py-[10px] hover:text-white  bg-white hover:bg-sky-300  opacity-85  ">View all  </button>
+        </a></div>
+    </div>
+</div>
+<div class="responsive  ">
+    <div class="block justify-start animate-me hidden1 ">
+<div class=" xl:h-[350px] sm:h-[190px] h-[260px] slide lg:h-[270px] border-transparent   rounded-[20px] slide-pic1 "></div>
+<h1 class="sm:text-[18px] text-[16px] font-semibold cabin pt-[20px] text-sky-300 opacity-75">Movies on Netflix.</h1>
+<h6 class="md:text-[16px] text-[12px] text-white font-medium cabin opacity-65">NETFLIX</h6>
+    </div>
+    <div class="block justify-start animate-me hidden1  ">
+        <div class=" xl:h-[350px] sm:h-[190px] h-[290px]  slide lg:h-[270px] border-transparent   rounded-[20px] slide-pic2 "></div>
+        <h1 class="sm:text-[18px] text-[16px] font-semibold cabin pt-[20px] text-sky-300 opacity-75">favorite shows </h1>
+        <h6 class="md:text-[16px] text-[12px] text-white font-medium cabin opacity-65"> Prime Video</h6>
+            </div>
+            <div class="block
+             justify-start  animate-me hidden1 ">
+                <div class=" xl:h-[350px] sm:h-[190px] h-[290px]  slide lg:h-[270px] border-transparent   rounded-[20px] slide-pic3 "></div>
+                <h1 class="sm:text-[18px] text-[16px] font-semibold cabin pt-[20px] text-sky-300 opacity-75">TV streaming</h1>
+                <h6 class="md:text-[16px] text-[12px] text-white font-medium cabin opacity-65">IPTV</h6>
+                    </div>
+                    
+                     <div class="block justify-start  animate-me hidden1 ">
+                        <div class=" xl:h-[350px] sm:h-[190px] h-[290px]  slide lg:h-[270px] border-transparent   rounded-[20px] slide-pic4 "></div>
+                        <h1 class="sm:text-[18px] text-[16px] font-semibold cabin pt-[20px] text-sky-300 opacity-75">Discover unlimited music</h1>
+                        <h6 class="md:text-[16px] text-[12px] text-white font-medium cabin opacity-65">Spotify</h6>
+                            </div>
+                            <div class="block justify-start  animate-me hidden1 ">
+                                <div class="xl:h-[350px] sm:h-[190px] h-[290px]  slide lg:h-[270px] border-transparent   rounded-[20px] slide-pic5 "></div>
+                                <h1 class="sm:text-[18px] text-[16px] font-semibold cabin pt-[20px] text-sky-300 opacity-75">Advanced AI</h1>
+                                <h6 class="md:text-[16px] text-[12px] text-white font-medium cabin opacity-65">Chat-Gpt-4</h6>
+                                    </div>
+                                    <div class="block justify-start animate-me hidden1 ">
+                                        <div class=" xl:h-[350px] sm:h-[190px]  slide h-[290px] lg:h-[270px] border-transparent   rounded-[20px] slide-pic6 "></div>
+                                        <h1 class="sm:text-[18px] text-[16px] font-semibold cabin pt-[20px] text-sky-300 opacity-75">Design & Create</h1>
+                                        <h6 class="md:text-[16px] text-[12px] text-white font-medium cabin opacity-65">Design</h6>
+                                            </div> 
+                                            <div class="block justify-start animate-me hidden1 ">
+                                                <div class=" xl:h-[350px] sm:h-[190px]  slide h-[290px] lg:h-[270px] border-transparent   rounded-[20px] slide-pic7 "></div>
+                                                <h1 class="sm:text-[18px] text-[16px] font-semibold cabin pt-[20px] text-sky-300 opacity-75">Secure, private browsing</h1>
+                                                <h6 class="md:text-[16px] text-[12px] text-white font-medium cabin opacity-65">Nord Vpn</h6>
+                                                    </div>
+                                                    <div class="block justify-start animate-me hidden1 ">
+                                                        <div class=" xl:h-[350px] sm:h-[190px]  slide h-[290px] lg:h-[270px] border-transparent   rounded-[20px] slide-pic8 "></div>
+                                                        <h1 class="sm:text-[18px] text-[16px] font-semibold cabin pt-[20px] text-sky-300 opacity-75">Stream protect Internet</h1>
+                                                        <h6 class="md:text-[16px] text-[12px] text-white font-medium cabin opacity-65">Hotspot shield</h6>
+                                                            </div>
+ 
+</div>
+</section>
+
+<section id="section1 " class="screen mx-auto sm:my-[120px] my-[70px]">
+    <h6 class="sm:text-[16px] text-[14px] text-white font-medium cabin pb-[10px] ">Our Reviews</h6>
+<div class="sm:flex  items-center justify-between  arrow mb-[70px]">
+    <div class="lg:w-[480px] md:w-[320px]" >
+        <h1 class="lg:text-[40px] md:text-[35px] text-[25px] leading-[1.25] font-medium cabin text-sky-300">Discover what our satisfied customers are saying</h1>
+    </div>
+    <div class="lg:text-nowrap mt-[36px] sm:mt-[0]"> <a href="">
+        <button class="text-nowrap font-semibold lg:text-[16px] md:text-[14px] text-[13px] btn bg-white text-black hover:text-white rounded-[10px] border-transparent lg:px-[30px]  lg:py-[12px] px-[25px] py-[10px]  hover:bg-sky-300  opacity-85  ">View all</button>
+    </a></div>
+</div>
+    </div>
+    <div class="sm:flex gap-[30px] ">
+    <div class="block justify-start mb-[40px] animate-me hidden1">
+        <div class=" xl:h-[240px] xl:w-[355px] lg:h-[174px] lg:w-[265px] sm:h-[125px] sm:w-[190px] h-[236px] last-review back-pics1 rounded-[20px]"></div>
+<div class="flex gap-[15px] mt-[30px] mb-[18px]">
+    <img src="author.jpg" alt="" class="rounded-[50%] h-[50px] w-[50px]">
+    <p class="md:text-[16px] text-[14px] font-normal text-white cabin">5 Feb 2023 <br> <span class="opacity-55">Wonderful Comments</span></p>
+</div>
+<h1 class="xl:text-[24px] md:text-[22px] text-[18px] leading-[1.29] font-medium pb-[12px] text-white opacity-65 ">1000+ TV Channels services</h1>
+<p class="mb-[16px]  opacity-85 xl:text-[14px] text-white text-[12px]">I really liked the quality of services provided by you. Especially Netflix and Spotify Pro have elevated my entertainment level. Truly, incredible service!</p>
+<a href="">
+    <h5 class="md:text-[16px] text-[12px] text-white hover:text-sky-300 font-semibold underline opacity-85">Read all <i class="fa-solid fa-arrow-right "></i></h5>
+</a>
+    </div>
+    <div class="block justify-start mb-[40px] animate-me hidden1 ">
+        <div class="  xl:h-[240px] xl:w-[355px] lg:h-[174px] lg:w-[265px]  sm:h-[125px] sm:w-[190px] last-review back-pics2 rounded-[20px] h-[236px] back-transition"></div>
+<div class="flex gap-[15px] mt-[30px] mb-[18px]">
+    <img src="author1.jpg" alt="" class="rounded-[50%] h-[50px] w-[50px]">
+    <p class="md:text-[16px] font-normal text-[14px] text-white cabin">9 sept 2023 <br> <span class="opacity-55">Delightful Feedback</span></p>
+</div>
+<h1 class="xl:text-[24px] md:text-[22px] text-[18px] leading-[1.29] text-white font-medium pb-[12px] opacity-65 ">Our Pro Services Reviews</h1>
+<p class="mb-[16px] text-white opacity-85 xl:text-[14px] text-[12px] ">Using your services is extremely easy and convenient. Canva Pro and Chat GPT-4 have taken my creativity to new heights. I recommend this company to everyone.</p>
+<a href="">
+    <h5 class="md:text-[16px] text-[12px] text-white font-semibold hover:text-sky-300 underline opacity-85">Read all <i class="fa-solid fa-arrow-right "></i></h5>
+</a>
+    </div>
+    <div class="block justify-start animate-me hidden1">
+        <div class="  xl:h-[240px] xl:w-[355px] lg:h-[174px] lg:w-[265px]  sm:h-[125px] sm:w-[190px] h-[236px] last-review back-pics3 rounded-[20px]"></div>
+<div class="flex gap-[15px] mt-[30px] mb-[18px]">
+    <img src="author2.jpg" alt="" class="rounded-[50%] h-[50px] w-[50px]">
+    <p class="md:text-[16px] text-[14px] font-normal text-white cabin">27 Jan 2024 <br> <span class="opacity-55">Charming Testimonials</span></p>
+</div>
+<h1 class="xl:text-[24px] md:text-[22px] text-[18px] text-white leading-[1.29] font-medium pb-[12px] opacity-65 ">Worry-Free Security</h1>
+<p class="mb-[16px] text-white opacity-85 xl:text-[14px]  text-[12px]">VPN services eliminate all my worries. NordVPN and Hotspot Shield VPN have provided me with a secure internet experience</p>
+<a href="">
+    <h5 class="md:text-[16px] text-[12px] leading-[1.25] text-white hover:text-sky-300 font-semibold underline opacity-85">Read all <i class="fa-solid fa-arrow-right "></i></h5>
+</a>
+    </div>
+</div>
+</section>
+<section class="mx-auto screen bg-sky-300 rounded-[20px] mb-[80px] box ">
+<div class="block text-center sm:py-[60px] py-[30px]  animate-me hidden1">
+    <h1 class="text-white xl:text-[40px] lg:text-[37px] md:text-[35px]  text-[30px] font-medium leading-[1.29] cabin">Feel free to reach out to us !</h1>
+    <p  class="text-white pt-[14px] pb-[24px] font-normal  xl:text-[16px] md:text-[14px] text-[12px] cabin">Contact us now, and we are ready to do what you want</p>
+    <a href="">
+        <button class=" text-nowrap font-semibold xl:text-[16px] text-[14px]  btn bg-white text-black border-[1.3px] rounded-[10px] xl:px-[42px] xl:py-[12px] md:px-[30px] px-[90px] sm:py-[10px] py-[8px] lg:px-[37px] lg:py-[10px]  hover:bg-sky-300 hover:text-white cabin last-btn">Contact Now </button>
+        </a>
+</div>
+</section>
+<footer class="screen mx-auto ">
+    <div class="sm:flex xl:gap-[230px] lg:gap-[172px]  md:gap-[100px] items-center animate-me hidden1  ">
+        <div class="block text-left ">
+        <img src="Logo.png" alt="" class="w-[91px] h-auto">
+        <p class=" font-normal leading-[1.7] xl:text-[14px] sm:text-[13px] text-[12px] text-white cabin pt-[16px] md:w-[200px] lg:w-[270px] xl:w-[350px] w-auto opacity-80">Experience the best in digital services with our premium offerings. Enjoy seamless streaming with Netflix, Prime Video, HBO Max, and IPTV, and dive into unlimited music with Spotify Pro. Unlock your creative potential with Canva Pro and Capcut Pro, while safeguarding your online activities with top-tier VPNs like Hotspot Shield and NordVPN.</p>
+      
+    </div>
+    <div class="flex xl:gap-[230px] lg:gap-[172px] md:gap-[100px] mt-[60px] sm:mt-[0px] justify-between ">
+    <div class="block  ">
+      <a href=""><h1 class="text-16px font-semibold pb-[16px]">Pages</h1></a> 
+       <ul>
+        <li class="font-light xl:text-[14px] text-[12px] pt-[8px] text-white foot cabin">Home</li>
+        <li class="font-light xl:text-[14px] text-[12px] pt-[8px] text-white foot cabin">Prices</li>
+        <li class="font-light xl:text-[14px] text-[12px] pt-[8px]  text-white foot cabin">About us</li>
+        <li class="font-light xl:text-[14px] text-[12px] pt-[8px] text-white foot cabin">Categories</li>
+        <li class="font-light xl:text-[14px] text-[12px] pt-[8px] text-white foot cabin">Conatct</li>
+        
+       </ul>
+    </div>
+
+    <div class="block  ">
+       <a href=""> <h1 class="text-[16px] font-semibold pb-[16px] cabin">Contacts</h1></a>
+       <p class="pb-[16px] xl:text-[14px] text-[12px] text-white font-extralight cabin lg:w-[175px] md:w-[175px] w-[140px] xl:w-[195px] leading-[1.5] opacity-80">2005 Stokes Isle Apt.  896,<br>
+        Venaville 10010, USA
+        info@yourdomain.com
+        (+68)120034509</p>
+        <div class="flex gap-[18px]">
+          <div class="text-white"><a href="https://www.facebook.com/share/14Rcx7WLPE/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f foot"></i></a></div>  
+        <div  class="text-white"> <a href="https://www.facebook.com/share/14Rcx7WLPE/?mibextid=wwXIfr"><i class="fa-brands fa-twitter foot"></i></a>  </div> 
+         <div  class="text-white"> <a href="https://www.facebook.com/share/14Rcx7WLPE/?mibextid=wwXIfr"><i class="fa-brands fa-instagram foot"></i></a></div>  
+        <div  class="text-white"> <a href=""><i class="fa-brands fa-whatsapp foot"></i></a>  </div> 
+        </div>
+    </div>
+    
+</div>
+    </div>
+    <div class="border-[2px] border-[#CDCDCD] mt-[90px] mb-[24px]"></div>
+<div class="sm:flex justify-between pb-[16px]">
+    <div class="flex mb-[10px] sm:mb-[0] opacity-75">
+<h1 class="md:text-[14px] text-[12px] font-normal foot">privacy policy </h1>
+<h1 class="md:text-[14px] text-[12px] font-normal foot ps-[10px] ">cookie policy </h1>
+</div>
+
+<div>
+    <p class="xl:text-[12x] text-[10px]  font-normal " >© 2020 Template Dedafo - Template Handmade by <span class="font-medium">bepd.dev</span></p>
+</div>
+</div>
+</footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="defado.js"></script>
+
+</body>
+</html>

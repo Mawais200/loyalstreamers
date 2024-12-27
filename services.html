@@ -1,0 +1,567 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+  integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+  integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-black">
+    <header >
+        <div id="toggleDiv" class="flex justify-between md:px-[40px] px-[25px] py-[5px] items-center latest">
+          <div><h1 class="text-white font-extrabold text-70px cabin">Loyal Streamers</h1></div>
+          <div>
+             <ul class="lg:flex hidden cabin gap-[40px] items-center"> 
+                <li><a class="text-[18px] font-normal text-white foot underline" href="">Home</a></li>
+     <li class=" dropdown "> 
+        <a class="text-[18px] font-normal text-white foot" href=""> About <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span> </a>
+         <ul class="dropdown-content absolute left-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg hidden"> <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Company Overview</a></li>
+             <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Our Team</a></li> 
+             <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Our Values</a></li> 
+             <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Location</a></li> 
+            </ul>
+         </li>
+      <li class=" dropdown ">
+         <a class="text-[18px] font-normal text-white foot" href="#"> Services <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span> </a>
+         <ul class="dropdown-content absolute left-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg hidden"> <li><a class="block px-4 py-2 hover:bg-gray-200" href="#netflix">TV Channels</a></li>
+     <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Get Pro</a></li>
+         <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">VPNs</a> </li> 
+         <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Music Streaming</a> </li>
+         <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Creative Tools</a> </li>
+
+    </ul>
+     </li>
+      
+       <li class="dropdown">
+        <a class="text-[18px] font-normal text-white foot" href="">Prices <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span></a>
+        <ul class="dropdown-content absolute left-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg hidden"> <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Subscription Plans</a></li>
+            <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Service Pricing</a></li>
+                <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Promotional Offers</a> </li> 
+                <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Annual vs. Monthly</a> </li>
+                <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Bundle Deals</a> </li>
+       
+           </ul>
+    </li>
+        <li>
+            <a class="text-[18px] font-normal text-white foot" href="">Contacts <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span></a>
+        </li>
+         <a href="./services.html"><button class="text-nowrap text-white l-one px-[25px] py-[5px] border-2 rounded-lg border-white hover:border-transparent hover:bg-sky-300 hover:text-white" style="transition:all 0.2s ease-in;">Subscribe</button></a> 
+        </ul>
+     </div>
+          <div  class="lg:hidden flex gap-[20px] l-one1 items-center ">
+            <a href=""><button class="sm:px-[18px] py-[4px] px-[18px] text-[14px] border-[2px] rounded-lg hover:border-transparent text-white  hover:bg-sky-300 hover:text-white" style="transition:all 0.2s ease-in;">Subscribe</button></a>
+            <div class="nav text-white" id="menuToggle" onclick="handleMenu()"><i class="fa-solid fa-bars" id="barsIcon"></i></div>
+          </div>
+        </div>
+        <div id="nav-dialogue" class="hidden fixed1 lg:hidden mb-5">
+          <div class="flex justify-between mx-[15px] my-[20px]">
+            <div><h1 class="text-sky-400 font-extrabold text-70px cabin">Loyal Streamers</h1></div>
+            <div class="flex gap-[20px] l-one1 items-center">
+              <a href="./services.html"><button class="sm:px-[18px] py-[4px] px-[18px] text-[14px] border-[2px] rounded-lg hover:border-transparent bg-black text-white hover:bg-sky-300 hover:text-white" style="transition:all 0.2s ease-in;">Subscribe</button></a>
+              <div class="nav" id="menuToggle" onclick="handleMenu()"><i class="fa-solid fa-xmark hidden" id="xmarkIcon"></i></div>
+            </div>
+          </div>
+          <div class="block mx-[25px] my-[20px]">
+            <ul class="cabin">
+                <li><a class="text-[14px] font-normal text-black pb-[10px] underline transition-transform transform hover:scale-110 hover:text-sky-300 hover:font-bold" href="#">Home</a></li>
+                <li><a class="text-[14px] font-normal text-black pb-[10px] transition-transform transform hover:scale-110 hover:text-sky-300 hover:font-bold" href="#section4">About</a></li>
+                <li><a class="text-[14px] font-normal text-black pb-[10px] transition-transform transform hover:scale-110 hover:text-sky-300 hover:font-bold" href="#section1">Services</a></li>
+                <li><a class="text-[14px] font-normal text-black pb-[10px] transition-transform transform hover:scale-110 hover:text-sky-300 hover:font-bold" href="#section3">Prices</a></li>
+                <li><a class="text-[14px] font-normal text-black mb-[15px] transition-transform transform hover:scale-110 hover:text-sky-300 hover:font-bold" href="#">Contacts</a></li>
+              </ul>
+              
+          </div>
+        </div>
+      </header>
+     
+       <section class="oxygen py-[80px] bg-[#F7F7F7]">
+        <div class="max-w-[1100px] mx-auto ">
+        <h1  class="text-[62px] text-sky-300 hover:text-black foot">TV Channels</h1>
+        <p class="text-[18px] leading-[2]">Get ready to unlock a world of entertainment like never before! With our ultimate streaming package, you'll get access to a vast library of content from top channels like Prime Video, IPTV, Chaupal TV, Hulu, and HBO Max+. Enjoy unlimited movies, TV shows, original content, and live channels from around the world. Plus, stay secure with our FREE VPN service and enjoy ad-free watching, HD quality, and easy access to your favorite shows. Whether you're a fan of Hollywood blockbusters, Pakistani dramas, or international TV shows, we've got you covered. Join now and experience the ultimate entertainment experience!</p>
+      </div>
+      </section>
+      <section id="netflix" class="oxygen py-[80px] bg-[#F7F7F7]">
+        <div class="max-w-[1100px] mx-auto ">
+            <div>
+                <div class="pb-10">
+                    <div class="flex justify-center">
+                        <button class="bg-black px-4 py-[9px] rounded-[5px] mt-[35px] text-white hover:bg-sky-300 hover:text-white">
+                            <p class="text-[14px] font-semibold">PRICING PLAN</p>
+                        </button>
+                    </div>
+                    <h2 class="text-sky-300 text-[44px] font-bold text-center my-[15px]">Choose the Right Plan for NETFLIX</h2>
+                    <p class="text-black text-[18px]  text-center">Experience the ultimate entertainment with Netflix's 1-month plan for just 450 PKR. Enjoy stunning movies and TV shows on one screen. For larger households, opt for the 2100 PKR plan and watch on up to five screens. Relish in high-quality 4K video, ad-free content, and exciting mobile games. With premium features and 24/7 support, there's something for everyone. Subscribe now and dive into your favorite shows today.</p>
+                </div>
+                <div>
+                    <div class="flex justify-center gap-[25px] w-full">
+                        <div class=" w-[350px] bg-white  border-2 hover:border-sky-600  trans rounded-lg" style="padding: 30px 30px 0px 30px;">
+                            <h3 class="text-[24px] text-[#202020] font-bold">1 Month  with 1 Screen</h3>
+                            <p class="text-[44px] font-bold text-[#202020] mt-4">450/-</p>
+                            <p class=" mt-3 text-[#616265]">Aaccess to most Movies and TV shows, mobile games.</p>
+                            <div class="bg-[#FFF7F2] p-[25px] mt-6">
+                              <ul class="space-y-2">
+                                <li class="flex items-center ">
+                                  <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                  </svg>
+                                  4K Resolution (Full HD)
+                                </li>
+                                <li class="flex items-center ">
+                                  <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                  </svg>
+                                  Download on supported devices at a time
+                                </li>
+                                <li class="flex items-center ">
+                                  <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                  </svg>
+                                  Movies and TV shows, Mobile games
+                                </li>
+                                <li class="flex items-center ">
+                                  <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                  </svg>
+                                  Premium supported
+                                </li>
+                                
+                              </ul>
+                            </div>
+                            <button class="w-full my-8 px-8 py-[13px] bg-[#202020] text-white font-semibold hover:bg-sky-300">
+                              Add To Cart
+                            </button>
+                        </div>
+                       
+                      <div class=" w-[350px] bg-white  border-2 hover:border-sky-600  trans rounded-lg" style="padding: 30px 30px 0px 30px;">
+                        <h3 class="text-[24px] text-[#202020] font-bold">1 Month with 5 Screen</h3>
+                        <p class="text-[44px] font-bold text-[#202020] mt-4">2100/-</p>
+                        <p class=" mt-3 text-[#616265]">Aaccess to most Movies and TV shows, mobile games.</p>
+                        <div class="bg-[#FFF7F2] p-[25px] mt-6">
+                          <ul class="space-y-2">
+                            <li class="flex items-center ">
+                              <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                              4K Resolution (Full HD)
+                            </li>
+                            <li class="flex items-center ">
+                              <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                              Download on supported devices at a time
+                            </li>
+                            <li class="flex items-center ">
+                              <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                              Movies and TV shows, Mobile games
+                            </li>
+                            <li class="flex items-center ">
+                              <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                              Premium supported
+                            </li>
+                            
+                          </ul>
+                        </div>
+                        <button class="w-full my-8 px-8 py-[13px] bg-[#202020] text-white font-semibold hover:bg-sky-300">
+                          Add To Cart
+                        </button>
+                    </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="primevideo" class="oxygen py-[80px] bg-[#F7F7F7]">
+      <div class="max-w-[1100px] mx-auto ">
+          <div>
+              <div class="pb-10">
+                  <div class="flex justify-center">
+                      <button class="bg-black px-4 py-[9px] rounded-[5px] mt-[35px] text-white hover:bg-sky-300 hover:text-white">
+                          <p class="text-[14px] font-semibold">PRICING PLAN</p>
+                      </button>
+                  </div>
+                  <h2 class="text-sky-300 text-[44px] font-bold text-center my-[15px]">Choose the Right Plan for Prime Video</h2>
+                  <p class="text-black text-[18px]  text-center">Unlock a world of entertainment with Amazon Prime Video! For just PKR 400, enjoy unlimited movies, TV shows, and original content on 1 screen. Or, upgrade to our family plan for PKR 300 and stream on up to 6 screens simultaneously! With Prime Video, you'll get access to exclusive titles, ad-free watching, and the ability to download content for offline viewing. Join the Prime Video family today and start streaming your favorite shows and movies!</p>
+              </div>
+              <div>
+                  <div class="flex justify-center gap-[25px] w-full">
+                      <div class=" w-[350px] bg-white  border-2 hover:border-sky-600  trans rounded-lg" style="padding: 30px 30px 0px 30px;">
+                          <h3 class="text-[24px] text-[#202020] font-bold">1 Month with 1 Screen</h3>
+                          <p class="text-[44px] font-bold text-[#202020] mt-4">100/-</p>
+                          <p class=" mt-3 text-[#616265]">Aaccess to most Movies and TV shows, mobile games.</p>
+                          <div class="bg-[#FFF7F2] p-[25px] mt-6">
+                            <ul class="space-y-2">
+                              <li class="flex items-center ">
+                                <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                4K Resolution (Full HD)
+                              </li>
+                              <li class="flex items-center ">
+                                <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Download on supported devices at a time
+                              </li>
+                              <li class="flex items-center ">
+                                <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Movies and TV shows, Mobile games
+                              </li>
+                              <li class="flex items-center ">
+                                <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Premium supported
+                              </li>
+                              
+                            </ul>
+                          </div>
+                          <button class="w-full my-8 px-8 py-[13px] bg-[#202020] text-white font-semibold hover:bg-sky-300">
+                            Add To Cart
+                          </button>
+                      </div>
+                      <div class=" w-[350px] bg-white  border-2 hover:border-sky-600  trans rounded-lg" style="padding: 30px 30px 0px 30px;">
+                        <h3 class="text-[24px] text-[#202020] font-bold">1 Month with 6 Screen</h3>
+                        <p class="text-[44px] font-bold text-[#202020] mt-4">300/-</p>
+                        <p class=" mt-3 text-[#616265]">Aaccess to most Movies and TV shows, mobile games.</p>
+                        <div class="bg-[#FFF7F2] p-[25px] mt-6">
+                          <ul class="space-y-2">
+                            <li class="flex items-center ">
+                              <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                              4K Resolution (Full HD)
+                            </li>
+                            <li class="flex items-center ">
+                              <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                              Download on supported devices at a time
+                            </li>
+                            <li class="flex items-center ">
+                              <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                              Movies and TV shows, Mobile games
+                            </li>
+                            <li class="flex items-center ">
+                              <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                              Premium supported
+                            </li>
+                            
+                          </ul>
+                        </div>
+                        <button class="w-full my-8 px-8 py-[13px] bg-[#202020] text-white font-semibold hover:bg-sky-300">
+                          Add To Cart
+                        </button>
+                    </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section id="IPTV" class="oxygen py-[80px] bg-[#F7F7F7]">
+    <div class="max-w-[1100px] mx-auto ">
+        <div>
+            <div class="pb-10">
+                <div class="flex justify-center">
+                    <button class="bg-black px-4 py-[9px] rounded-[5px] mt-[35px] text-white hover:bg-sky-300 hover:text-white">
+                        <p class="text-[14px] font-semibold">PRICING PLAN</p>
+                    </button>
+                </div>
+                <h2 class="text-sky-300 text-[44px] font-bold text-center my-[15px]">Choose the Right Plan for IPTV</h2>
+                <p class="text-black text-[18px]  text-center">Ab apne ghar mein hi cinema ka maza lein! Our IPTV plan offers 1000+ live channels, movies, and TV shows for just PKR 400 on 1 screen. Enjoy HD quality, no buffering, and easy installation. Watch your favorite shows anytime, anywhere! Join now and experience the ultimate TV viewing experience!</p>
+            </div>
+            <div>
+                <div class="flex justify-center w-full">
+                    <div class=" w-[350px] bg-white  border-2 hover:border-sky-600  trans rounded-lg" style="padding: 30px 30px 0px 30px;">
+                        <h3 class="text-[24px] text-[#202020] font-bold">1 Month Plan</h3>
+                        <p class="text-[44px] font-bold text-[#202020] mt-4">400/-</p>
+                        <p class=" mt-3 text-[#616265]">Aaccess to most Movies and TV shows, mobile games.</p>
+                        <div class="bg-[#FFF7F2] p-[25px] mt-6">
+                          <ul class="space-y-2">
+                            <li class="flex items-center ">
+                              <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                              4K Resolution (Full HD)
+                            </li>
+                            <li class="flex items-center ">
+                              <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                              Download on supported devices at a time
+                            </li>
+                            <li class="flex items-center ">
+                              <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                              Movies and TV shows, Mobile games
+                            </li>
+                            <li class="flex items-center ">
+                              <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                              Premium supported
+                            </li>
+                            
+                          </ul>
+                        </div>
+                        <button class="w-full my-8 px-8 py-[13px] bg-[#202020] text-white font-semibold hover:bg-sky-300">
+                          Add To Cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="Chaupal" class="oxygen py-[80px] bg-[#F7F7F7]">
+  <div class="max-w-[1100px] mx-auto ">
+      <div>
+          <div class="pb-10">
+              <div class="flex justify-center">
+                  <button class="bg-black px-4 py-[9px] rounded-[5px] mt-[35px] text-white hover:bg-sky-300 hover:text-white">
+                      <p class="text-[14px] font-semibold">PRICING PLAN</p>
+                  </button>
+              </div>
+              <h2 class="text-sky-300 text-[44px] font-bold text-center my-[15px]">Choose the Right Plan for CHAUPAL</h2>
+              <p class="text-black text-[18px]  text-center">Get ready for non-stop entertainment with Chaupal TV! For just PKR 300, enjoy 100+ live channels, including Pakistani dramas, movies, and news on 1 screen. Chaupal TV offers HD quality, easy installation, and no monthly contracts. Watch your favorite shows anytime, anywhere! Join Chaupal TV today and experience the ultimate TV viewing experience!</p>
+          </div>
+          <div>
+              <div class="flex justify-center w-full">
+                  <div class=" w-[350px] bg-white  border-2 hover:border-sky-600  trans rounded-lg" style="padding: 30px 30px 0px 30px;">
+                      <h3 class="text-[24px] text-[#202020] font-bold">1 Month Plan</h3>
+                      <p class="text-[44px] font-bold text-[#202020] mt-4">300/-</p>
+                      <p class=" mt-3 text-[#616265]">Aaccess to most Movies and TV shows, mobile games.</p>
+                      <div class="bg-[#FFF7F2] p-[25px] mt-6">
+                        <ul class="space-y-2">
+                          <li class="flex items-center ">
+                            <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            4K Resolution (Full HD)
+                          </li>
+                          <li class="flex items-center ">
+                            <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Download on supported devices at a time
+                          </li>
+                          <li class="flex items-center ">
+                            <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Movies and TV shows, Mobile games
+                          </li>
+                          <li class="flex items-center ">
+                            <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Premium supported
+                          </li>
+                          
+                        </ul>
+                      </div>
+                      <button class="w-full my-8 px-8 py-[13px] bg-[#202020] text-white font-semibold hover:bg-sky-300">
+                        Add To Cart
+                      </button>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section id="HULLU" class="oxygen py-[80px] bg-[#F7F7F7]">
+  <div class="max-w-[1100px] mx-auto ">
+      <div>
+          <div class="pb-10">
+              <div class="flex justify-center">
+                  <button class="bg-black px-4 py-[9px] rounded-[5px] mt-[35px] text-white hover:bg-sky-300 hover:text-white">
+                      <p class="text-[14px] font-semibold">PRICING PLAN</p>
+                  </button>
+              </div>
+              <h2 class="text-sky-300 text-[44px] font-bold text-center my-[15px]">Choose the Right Plan for HULLU</h2>
+              <p class="text-black text-[18px]  text-center">Ab Hollywood ki duniya apke ghar mein! Get Hulu's exclusive content, including latest movies and TV shows, for just PKR 450 on 1 screen. Plus, stay secure with our FREE VPN service. Enjoy ad-free watching, HD quality, and easy access to your favorite shows. Join now and experience the ultimate entertainment experience!</p>
+          </div>
+          <div>
+              <div class="flex justify-center w-full">
+                  <div class=" w-[350px] bg-white  border-2 hover:border-sky-600  trans rounded-lg" style="padding: 30px 30px 0px 30px;">
+                      <h3 class="text-[24px] text-[#202020] font-bold">1 Month Plan</h3>
+                      <p class="text-[44px] font-bold text-[#202020] mt-4">450/-</p>
+                      <p class=" mt-3 text-[#616265]">Aaccess to most Movies and TV shows, mobile games.</p>
+                      <div class="bg-[#FFF7F2] p-[25px] mt-6">
+                        <ul class="space-y-2">
+                          <li class="flex items-center ">
+                            <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            4K Resolution (Full HD)
+                          </li>
+                          <li class="flex items-center ">
+                            <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Download on supported devices at a time
+                          </li>
+                          <li class="flex items-center ">
+                            <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Movies and TV shows with Vpn
+                          </li>
+                          <li class="flex items-center ">
+                            <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Premium supported
+                          </li>
+                          
+                        </ul>
+                      </div>
+                      <button class="w-full my-8 px-8 py-[13px] bg-[#202020] text-white font-semibold hover:bg-sky-300">
+                        Add To Cart
+                      </button>
+                  </div>
+
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section id="Hbo" class="oxygen py-[80px] bg-[#F7F7F7]">
+  <div class="max-w-[1100px] mx-auto ">
+      <div>
+          <div class="pb-10">
+              <div class="flex justify-center">
+                  <button class="bg-black px-4 py-[9px] rounded-[5px] mt-[35px] text-white hover:bg-sky-300 hover:text-white">
+                      <p class="text-[14px] font-semibold">PRICING PLAN</p>
+                  </button>
+              </div>
+              <h2 class="text-sky-300 text-[44px] font-bold text-center my-[15px]">Choose the Right Plan for HBO MAX</h2>
+              <p class="text-black text-[18px]  text-center">Ab HBO Max+ ki duniya apke ghar mein! Get unlimited access to blockbuster movies, exclusive TV shows, and original content for just PKR 450 on 1 screen. Plus, stay secure with our FREE VPN service. Enjoy ad-free watching, HD quality, and exclusive content from Warner Bros, HBO, and more! Join now and experience the ultimate entertainment experience!</p>
+          </div>
+          <div>
+              <div class="flex justify-center w-full">
+                  <div class=" w-[350px] bg-white  border-2 hover:border-sky-600  trans rounded-lg" style="padding: 30px 30px 0px 30px;">
+                      <h3 class="text-[24px] text-[#202020] font-bold">1 Month Plan</h3>
+                      <p class="text-[44px] font-bold text-[#202020] mt-4">450/-</p>
+                      <p class=" mt-3 text-[#616265]">Access to most Movies and TV shows, mobile games.</p>
+                      <div class="bg-[#FFF7F2] p-[25px] mt-6">
+                        <ul class="space-y-2">
+                          <li class="flex items-center ">
+                            <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            4K Resolution (Full HD)
+                          </li>
+                          <li class="flex items-center ">
+                            <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Download on supported devices at a time
+                          </li>
+                          <li class="flex items-center ">
+                            <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Movies and TV shows with Vpn
+                          </li>
+                          <li class="flex items-center ">
+                            <svg class="w-5 h-5 text-[#D31B41] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Premium supported
+                          </li>
+                          
+                        </ul>
+                      </div>
+                      <button class="w-full my-8 px-8 py-[13px] bg-[#202020] text-white font-semibold hover:bg-sky-300">
+                        Add To Cart
+                      </button>
+                  </div>
+
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<footer class="screen mx-auto ">
+    <div class="sm:flex xl:gap-[230px] lg:gap-[172px]  md:gap-[100px] items-center animate-me hidden1  ">
+        <div class="block text-left ">
+        
+        <p class=" font-normal leading-[1.7] xl:text-[14px] sm:text-[13px] text-[12px] text-white cabin pt-[16px] md:w-[200px] lg:w-[270px] xl:w-[350px] w-auto opacity-80">Experience the best in digital services with our premium offerings. Enjoy seamless streaming with Netflix, Prime Video, HBO Max, and IPTV, and dive into unlimited music with Spotify Pro. Unlock your creative potential with Canva Pro and Capcut Pro, while safeguarding your online activities with top-tier VPNs like Hotspot Shield and NordVPN.</p>
+      
+    </div>
+    <div class="flex xl:gap-[230px] lg:gap-[172px] md:gap-[100px] mt-[60px] sm:mt-[0px] justify-between ">
+    <div class="block  ">
+      <a href=""><h1 class="text-16px font-semibold pb-[16px]">Pages</h1></a> 
+       <ul>
+        <li class="font-light xl:text-[14px] text-[12px] pt-[8px] text-white foot cabin">Home</li>
+        <li class="font-light xl:text-[14px] text-[12px] pt-[8px] text-white foot cabin">Prices</li>
+        <li class="font-light xl:text-[14px] text-[12px] pt-[8px]  text-white foot cabin">About us</li>
+        <li class="font-light xl:text-[14px] text-[12px] pt-[8px] text-white foot cabin">Categories</li>
+        <li class="font-light xl:text-[14px] text-[12px] pt-[8px] text-white foot cabin">Conatct</li>
+        
+       </ul>
+    </div>
+
+    <div class="block  ">
+       <a href=""> <h1 class="text-[16px] font-semibold pb-[16px] cabin">Contacts</h1></a>
+       <p class="pb-[16px] xl:text-[14px] text-[12px] text-white font-extralight cabin lg:w-[175px] md:w-[175px] w-[140px] xl:w-[195px] leading-[1.5] opacity-80">2005 Stokes Isle Apt.  896,<br>
+        Venaville 10010, USA
+        info@yourdomain.com
+        (+68)120034509</p>
+        <div class="flex gap-[18px]">
+          <div class="text-white"><a href="https://www.facebook.com/share/14Rcx7WLPE/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f foot"></i></a></div>  
+        <div  class="text-white"> <a href="https://www.facebook.com/share/14Rcx7WLPE/?mibextid=wwXIfr"><i class="fa-brands fa-twitter foot"></i></a>  </div> 
+         <div  class="text-white"> <a href="https://www.facebook.com/share/14Rcx7WLPE/?mibextid=wwXIfr"><i class="fa-brands fa-instagram foot"></i></a></div>  
+        <div  class="text-white"> <a href=""><i class="fa-brands fa-whatsapp foot"></i></a>  </div> 
+        </div>
+    </div>
+    
+</div>
+    </div>
+    <div class="border-[1px] border-[#CDCDCD] mt-[30px] "></div>
+<div class="sm:flex justify-between pb-[16px]">
+    <div class="flex mb-[10px] sm:mb-[0] opacity-75">
+<h1 class="md:text-[14px] text-white text-[12px] font-normal foot">privacy policy </h1>
+<h1 class="md:text-[14px] text-white text-[12px] font-normal foot ps-[10px] ">cookie policy </h1>
+</div>
+
+<div>
+    <p class="xl:text-[14x] text-[10px] text-white font-normal " >© 2024 loyalstreamers - streaming page <span class="font-medium">waqas</span></p>
+</div>
+</div>
+</footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="defado.js"></script>
+
+</body>
+</html>

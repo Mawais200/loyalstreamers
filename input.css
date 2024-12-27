@@ -1,0 +1,552 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cabin{
+    font-family: "Cabin", sans-serif;
+}
+
+
+.first::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+  background-color: rgba(10, 20, 25, 0.7);
+
+}
+
+.information {
+    background-color:skyblue;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+
+}
+.btn{
+    transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s all;
+}
+.video-icon{
+    background-color:white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    position: absolute;
+        top: 50%;
+       left: 50%;
+        transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+        cursor: pointer;
+}
+.container {
+    position: relative;
+}
+.container img {
+    width: 100%;
+    height: auto;
+  }
+  .back-pics1 { position: relative;
+    overflow: hidden; 
+    border-radius: 20px;
+    } 
+    .back-pics1::before
+     { 
+       content: "";
+        position: absolute;
+         top: 0; left: 0;
+          right: 0; bottom: 0;
+           background-image: url('netflix2.jpg');
+            background-repeat: no-repeat;
+             background-size: cover;
+              transition: transform 0.4s ease-in-out;
+               transform: scale(1); z-index: -1; }
+
+                .back-pics1:hover::before {
+                  transform: scale(1.1); }
+  .back-pics2 { position: relative;
+     overflow: hidden; 
+     border-radius: 20px;
+     } 
+     .back-pics2::before
+      { 
+        content: "";
+         position: absolute;
+          top: 0; left: 0;
+           right: 0; bottom: 0;
+            background-image: url('gpt1.jpg');
+             background-repeat: no-repeat;
+              background-size: cover;
+               transition: transform 0.4s ease-in-out;
+                transform: scale(1); z-index: -1; }
+                 .back-pics2:hover::before {
+                   transform: scale(1.1);  }
+       
+       .back-pics3 { position: relative;
+     overflow: hidden; 
+      border-radius: 20px;
+      } 
+    .back-pics3::before
+    { 
+  content: "";
+   position: absolute;
+    top: 0; 
+   left: 0;
+  right: 0; 
+bottom: 0;
+   background-image: url('vpns.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   transition: transform 0.4s ease-in-out;
+  
+     }
+ .back-pics3:hover::before {
+ transform: scale(1.1);                           
+ }
+
+
+ .foot:hover{
+    color:skyblue;
+    transition:all  0.4s  ease-in ;
+ }
+.hover-effect {
+   position: relative;
+    transition: transform 0.6s ease, box-shadow 0.3s ease; 
+  }
+ .hover-effect:hover { 
+  transform: translateY(-10px) ;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   }
+   .back-transition:hover
+   {
+    
+     background-size: 120%;
+     
+     
+      }
+      .slick-initialized .slick-slide{
+        padding: 0 15px;
+      }
+ .slide-pic1 { 
+  position: relative;
+ overflow: hidden; 
+  border-radius: 20px;
+         } 
+.slide-pic1::before
+       { 
+ content: "";
+position: absolute;
+top: 0; 
+left: 0;
+right: 0; 
+bottom: 0;
+background-image: url('netflix2.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+transition: transform 0.4s ease-in-out;
+transform: scale(1);
+z-index: -1; }
+.slide-pic1:hover::before {
+ transform: scale(1.1);                           
+    }
+    .slide-pic2 { 
+      position: relative;
+     overflow: hidden; 
+      border-radius: 20px;
+             } 
+    .slide-pic2::before
+           { 
+     content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    background-image: url('Prime.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.4s ease-in-out;
+    transform: scale(1);
+    z-index: -1; }
+    .slide-pic2:hover::before {
+     transform: scale(1.1);                           
+        }
+        .slide-pic3 { 
+          position: relative;
+         overflow: hidden; 
+          border-radius: 20px;
+                 } 
+        .slide-pic3::before
+               { 
+         content: "";
+        position: absolute;
+        top: 0; 
+        left: 0;
+        right: 0; 
+        bottom: 0;
+        background-image: url('iptv.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: transform 0.4s ease-in-out;
+        transform: scale(1);
+        z-index: -1; }
+        .slide-pic3:hover::before {
+         transform: scale(1.1);                           
+            }
+            .slide-pic4 { 
+              position: relative;
+             overflow: hidden; 
+              border-radius: 20px;
+                     } 
+            .slide-pic4::before
+                   { 
+             content: "";
+            position: absolute;
+            top: 0; 
+            left: 0;
+            right: 0; 
+            bottom: 0;
+            background-image: url('spotify.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: transform 0.4s ease-in-out;
+            transform: scale(1);
+            z-index: -1; }
+            .slide-pic4:hover::before {
+             transform: scale(1.1);                           
+                }
+                .slide-pic5 { 
+                  position: relative;
+                 overflow: hidden; 
+                  border-radius: 20px;
+                         } 
+                .slide-pic5::before
+                       { 
+                 content: "";
+                position: absolute;
+                top: 0; 
+                left: 0;
+                right: 0; 
+                bottom: 0;
+                background-image: url('chatgpt.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: transform 0.4s ease-in-out;
+                transform: scale(1);
+                z-index: -1; }
+                .slide-pic5:hover::before {
+                 transform: scale(1.1);                           
+                    }
+                    .slide-pic6 { 
+                      position: relative;
+                     overflow: hidden; 
+                      border-radius: 20px;
+                             } 
+                    .slide-pic6::before
+                           { 
+                     content: "";
+                    position: absolute;
+                    top: 0; 
+                    left: 0;
+                    right: 0; 
+                    bottom: 0;
+                    background-image: url('Canva.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    transition: transform 0.4s ease-in-out;
+                    transform: scale(1);
+                    z-index: -1; }
+                    .slide-pic6:hover::before {
+                     transform: scale(1.1);                           
+                        }   
+                        .slide-pic8 { 
+                          position: relative;
+                         overflow: hidden; 
+                          border-radius: 20px;
+                                 } 
+                        .slide-pic8::before
+                               { 
+                         content: "";
+                        position: absolute;
+                        top: 0; 
+                        left: 0;
+                        right: 0; 
+                        bottom: 0;
+                        background-image: url('hotspot.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        transition: transform 0.4s ease-in-out;
+                        transform: scale(1);
+                        z-index: -1; }
+                        .slide-pic8:hover::before {
+                         transform: scale(1.1);                           
+                            }
+                            .slide-pic7 { 
+                              position: relative;
+                             overflow: hidden; 
+                              border-radius: 20px;
+                                     } 
+                            .slide-pic7::before
+                                   { 
+                             content: "";
+                            position: absolute;
+                            top: 0; 
+                            left: 0;
+                            right: 0; 
+                            bottom: 0;
+                            background-image: url('Nord.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            transition: transform 0.4s ease-in-out;
+                            transform: scale(1);
+                            z-index: -1; }
+                            .slide-pic7:hover::before {
+                             transform: scale(1.1);                           
+                                }           
+@media(min-width:1350px){
+  .screen{
+    max-width: 1140px;
+  }
+}
+@media(min-width:1280px) and (max-width:1349px)
+{
+  .screen{
+    max-width: 1140px;
+  }
+}
+@media(min-width:1024px) and (max-width:1280px)
+{
+  .screen{
+    max-width: 850px;
+  }
+}
+
+
+@media(max-width:891px) and (min-width:576px){
+  .third{
+    display: block;
+    
+  }
+  .third-text{
+width: 460px;
+text-align: left;
+  }
+  .third-text h1{
+    font-size: 35px;
+  }
+  .third-text h8{
+    font-size: 14px;
+  }
+  .third-text p{
+    font-size: 17px;
+    font-weight: 100;
+  }
+  .third-text button{
+    padding: 10px 20px 10px 20px;
+  }
+  .l-one2{
+    width:120px;
+  }
+  
+} 
+@media(min-width:768px) and (max-width:992px){
+  .screen{
+    width:680px;
+  
+  }
+  .nav{
+font-size: 25px;
+  }
+  
+}
+.medi img{
+width: 100px !important;
+}
+
+@media(min-width:395px) and (max-width:425px){
+  .screen{
+    width:380px;
+  }
+  .nav{
+    font-size: 20px;
+      }
+   .slide {
+    height: 160px;
+   }
+   .video-icon{
+    height: 70px;
+    width: 70px;
+   }
+
+   
+  .first .one { font-size: 48px;
+  }
+  .box{
+    padding: 50px 40px ;
+   }
+   .l-one2{
+    width:91px ;
+   }
+}
+  
+@media(min-width:350px) and (max-width:375px){
+  .screen{
+    width:340px;
+  }
+  .nav{
+    font-size: 20px;
+      }
+      .video-icon{
+        height: 70px;
+        width: 70px;
+       }
+       .video-icon .fa-play {
+        font-size: 20px;
+      
+       }
+       .slide{
+        height: 144px;
+       }
+       .l-one2{
+        width:91px ;
+       }
+       .box{
+        padding: 50px 40px ;
+       }
+       .last-review{
+        height: 210px;
+        width: 320px;
+       }
+}
+@media(min-width:280px) and (max-width:320px){
+  .screen{
+    width:285px;
+  }
+  .nav{
+    font-size: 17px;
+      }
+      .video-icon{
+        height: 60px;
+        width: 60px;
+       }
+       .video-icon .fa-play {
+        font-size: 20px;
+      
+       }
+       .last-btn{
+        padding: 7px 45px;
+       }
+       .box{
+        padding: 50px 40px ;
+       }
+       .l-one{
+        padding: 8px 20px;
+       }
+       .l-one1 {
+                    gap:10px
+       }
+       .l-one2{
+        width:91px ;
+       }
+       .first-b{
+        width: 200px;
+       }
+       .latest{
+      gap:20px
+       }
+       .last-review{
+        height: 170px;
+        width: 255px;
+       }
+       
+}
+.show-nav {
+  display: block;
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#nav-items li {
+  margin-bottom: 10px;
+}
+.hidden1 { 
+  opacity: 0; 
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+  transform: translateY(50%);
+} 
+.show { 
+  opacity: 1; 
+  transform: translateY(0);
+}
+.escape { 
+  
+  transform:scale(0);
+  transition: transform 1s ease-in-out, opacity 0.3s ease-in-out; /* Transition effect */ 
+} 
+
+.escape-out {
+  
+  transform:scale(1) ; /* Move out of screen to the right */
+  opacity: 1; /* Fade out */ 
+}
+.hidden { 
+  display: none;
+}
+
+.fixed1 { 
+   top: 0;
+  left: 0; 
+  width: 100vw; 
+  height: 70vh; /* Adjust to cover only half of the screen */
+  z-index: 10;
+  background-color: white;
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.relative { 
+  position: relative; 
+  z-index: 0; 
+}
+
+#barsIcon.hidden, #xmarkIcon.hidden, #toggleDiv.hidden { 
+  display: none; 
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:skyblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 16px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.single-card:hover .card-btn1::before {
+  width: 100%;
+}
+.trans:hover{
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.05);
+}
